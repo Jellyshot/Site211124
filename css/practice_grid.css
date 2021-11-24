@@ -1,30 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.col-9{
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    width: 70%;
+}
+.col-2{
+    margin: 0 auto;
+    text-align: center;
+}
+.col-1{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.header{
+    width: 100%;
+    line-height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 4px midnightblue;
+    /* 배경색이 안나타나요! */
+}
+.nav{
+    margin: 0 auto;
+    text-align: center;
+}
+li{
+    width: 70%;
+    margin: 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 5px;
+}
+h1{
+    text-align: center;
+    line-height: 100px;
+    border: 5px double darkblue;
+    height: 100px;
+    width: 600px;
+    margin: 30px auto;
+
+}
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: gray;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:1.5fr 1fr 1fr 1fr;
     padding: 20px;
-    justify-content: center;
+    grid-gap: 10px;
+    width: 70%;
+    margin: 50px auto;
 }
-
-[class*="col-"]{
+[class*="item-"]{
     float: left;
-    padding: 10px;
     border: 0.5px solid white;
     background-color: black;
-    padding: 30px;
     font-size: 1.5rem;
     text-align: center;
     color: white;
 }
+    .item-3{
+    padding: 30px;
+}
+    .item-1{
+    padding: 50px ;
+    grid-column: 1/ span 2;
+}
+    .item-2{
+    padding: 50px ;
+    grid-column: 3/ 5;
+    background-color: white;
+    border: none;
+}
 
-h1{
-    text-align: center;
-    line-height: 100px;
-    background-color: yellowgreen;
-    height: 100px;
+.main{
+    margin: 100px 0;
+    height: auto;
 }
-ul{
-    font-size: 1.5rem;
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: midnightblue;
+    color: lightgray;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* 왜 패딩 줬는데, 아래에 빈공간이 안생기는거죵? */
+    padding-left: 20px;
 }
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* 애를 위로 올렸을때와 아래에 두었을때 크기차이가 생기는 원인이 뭘까요? */
