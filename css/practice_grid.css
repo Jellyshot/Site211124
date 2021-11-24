@@ -1,0 +1,30 @@
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 20px;
+    justify-content: center;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    border: 0.5px solid white;
+    background-color: black;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    line-height: 100px;
+    background-color: yellowgreen;
+    height: 100px;
+}
+ul{
+    font-size: 1.5rem;
+}
